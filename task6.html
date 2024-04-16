@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task6</title>
+</head>
+<body>
+
+<h1>Feedback Survey</h1>
+
+<form action="#" method="post">
+  
+  <h2>Multiple Choice Question</h2>
+  <p>What is your favorite color?</p>
+  <input type="radio" id="color1" name="color" value="red">
+  <label for="color1">Red</label><br>
+  <input type="radio" id="color2" name="color" value="blue">
+  <label for="color2">Blue</label><br>
+  <input type="radio" id="color3" name="color" value="green">
+  <label for="color3">Green</label><br>
+  
+  <h2>Checkboxes</h2>
+  <p>Which of the following fruits do you like?</p>
+  <input type="checkbox" id="fruit1" name="fruit[]" value="apple">
+  <label for="fruit1">Apple</label><br>
+  <input type="checkbox" id="fruit2" name="fruit[]" value="banana">
+  <label for="fruit2">Banana</label><br>
+  <input type="checkbox" id="fruit3" name="fruit[]" value="orange">
+  <label for="fruit3">Orange</label><br>
+  
+  <h2>Text Input</h2>
+  <label for="short-answer">What is your age?</label><br>
+  <input type="text" id="short-answer" name="age"><br>
+  
+  <h2>Textarea</h2>
+  <label for="long-answer">Please provide any additional comments:</label><br>
+  <textarea id="long-answer" name="comments" rows="4" cols="50"></textarea><br>
+  
+  <h2>Rating Scale</h2>
+  <p>How satisfied are you with our service?</p>
+  <input type="range" id="rating" name="rating" min="1" max="5">
+  
+  <h2>Dropdown Menu</h2>
+  <label for="dropdown">Select your country:</label><br>
+  <select id="dropdown" name="country">
+    <option value="usa">Dharwad</option>
+    <option value="uk">Hubli</option>
+    <option value="canada">Gadag</option>
+  </select><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

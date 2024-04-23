@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horizontal and Vertical Navigation Menus</title>
+<style>
+.horizontal-menu {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.horizontal-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal-menu li {
+  float: left;
+}
+
+.horizontal-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.horizontal-menu li a:hover {
+  background-color: #111;
+}
+
+.vertical-menu {
+  background-color: #333;
+  width: 100px;
+}
+
+.vertical-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vertical-menu li {
+  text-align: center;
+}
+
+.vertical-menu li a {
+  display: block;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.vertical-menu li a:hover {
+  background-color: #111;
+}
+
+.dropdown-menu {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.dropdown-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  float: left;
+}
+
+.dropdown-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #111;
+}
+
+.dropdown-menu .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-menu .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown-menu .dropdown-content a:hover {
+  background-color: #111;
+}
+
+.dropdown-menu li:hover .dropdown-content {
+  display: block;
+}
+
+.text-block {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  overflow: scroll;
+}
+
+.image-container {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.dropdow {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  overflow-y: auto;
+}
+
+span.a{
+  display: inline;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+
+  background-color: #b8d60a;
+  border: 1px solid black;
+}
+
+span.b{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #ff9999;
+  border: 1px solid black;
+  padding: 5px;
+
+
+}
+
+span.c{
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #ff9999;
+  border: 1px solid black;
+  padding: 5px;
+
+
+}
+.section {
+  margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+    <h1>Horizontal-menu</h1>
+<section class="section">
+    <nav class="horizontal-menu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+</section>
+
+<h1>Vertical-menu</h1>
+<section class="section">
+    <nav class="vertical-menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</section>
+
+<h1>Dropdown-menu</h1>
+
+<section>
+    <nav class="dropdown-menu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Services</a>
+      <div class="dropdown-content">
+        <a href="#">Service 1</a>
+        <a href="#">Service 2</a>
+        <a href="#">Service 3</a>
+      </div>
+    </li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+</section>
+<br>
+<h1>Text-block</h1>
+<section>
+<div class="text-block">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae tempor justo, nec consectetur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+  </div>
+  </section>
+
+  <br>
+  <h1>Container</h1>
+  <div class="container">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae tempor justo, nec consectetur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+  </div>
+<br>
+<h1>Image-container</h1>
+<div class="image-container">
+    <img src="ultimez.jpeg" alt="Overflowed Image">
+  </div>
+
+  <br>
+  <h1>Dropdown</h1>
+  <div class="dropdow">
+    <ul>
+      <li>Option 1</li>
+      <li>Option 2</li>
+      <li>Option 3</li>
+      <li>Option 4</li>
+      <li>Option 5</li>
+      <li>Option 6</li>
+      <li>Option 7</li>
+      <li>Option 8</li>
+      <li>Option 9</li>
+      <li>Option 10</li>
+    </ul>
+  </div>
+
+  <br>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="a">Phasellus   </span><span class="a">vitae</span> tempor justo, nec consectetur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="b">Phasellus   </span><span class="b">vitae</span> tempor justo, nec consectetur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="">Phasellus   </span><span class="c">vitae</span> tempor justo, nec consectetur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+
+</body>
+</html>
